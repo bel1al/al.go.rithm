@@ -235,23 +235,60 @@
 }
 
 .hero__description {
-  font-size: 60px;
+  font-size: 25px;
   background: #da22ff; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    #9114ff,
-    #da22ff
+    #ff6a00,
+    #ee0979
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
-    #8f0eff,
-    #da22ff
+    #ff6a00,
+    #ee0979
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
+}
+
+.hero__description_container {
+  padding: 15px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+/* .hero__description_play {
+  width: 128px;
+  height: 128px;
+  background-image: url('./img/play_2.png');
+  background-repeat: no-repeat;
+  cursor: pointer;
+  overflow: hidden;
+  background-size: cover;
+  background-position: right;
+  background-color: rgba(255, 255, 255);
+  border-radius: 50%;
+} */
+
+.hero__description_play {
+  width: 96px;
+  height: 96px;
+  background: white;
+  border-radius: 50%;
+  transform: rotate(90deg);
+  background: -webkit-linear-gradient(left top, #ff6a00, #ee0979 100%);
+}
+
+.hero__description_play:after {
+  content: '';
+  top: 50%;
+  left: 50%;
+  border: 36px solid transparent;
+  border-bottom: 48px solid black;
+  transform: translateX(-50%) translateY(-85%);
 }
 
 .highlight {

@@ -3,16 +3,11 @@
 $name = $_POST['name'];
 $email= $_POST['email_addr'];
 $message= $_POST['old'];
-$to = "skywokerua@mail.com";
 
-$subject = "Mail From algorithm";
-$txt ="Name = ". $name . "\r\n  Email = " . $email . "\r\n Message =" . $message;
+$mailTo = "skywokerua@email.com";
+$headers =  "From: ".$email;
 
-$headers = "From: noreply@algorithm.com" . "\r\n" .
-"CC: somebodyelse@example.com";
-if($email!=NULL){
-    mail($to,$subject,$txt,$headers);
-}
+mail($mailTo, $name, $message, $headers);
 //redirect
 header("Location:details.html");
 ?>

@@ -268,6 +268,7 @@
   padding: 15px;
   background-color: white;
   border-radius: 20px;
+  margin-right: 3%;
 }
 
 /* .hero__description_play {
@@ -795,7 +796,15 @@
   background-color: #e1bee7;
   margin: auto;
   padding: 0;
-  border: 5px solid #7b1fa2;
+  border: 5px solid transparent;
+  border-image: linear-gradient(
+    to left top,
+    #dd2476 10%,
+    transparent 30%,
+    transparent 70%,
+    #ff512f 90%
+  );
+  border-image-slice: 1;
   width: 400px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-animation-name: animatetop;
@@ -843,7 +852,9 @@
 
 .modal-header {
   padding: 3% 0 3% 0;
-  background-color: #9c27b0;
+  background: #ff512f;
+  background: -webkit-linear-gradient(to right, #dd2476, #ff512f);
+  background: linear-gradient(to right, #dd2476, #ff512f);
   color: white;
 }
 
@@ -880,10 +891,4 @@
   width: 100%;
   font-size: 14px;
   cursor: pointer;
-}
-
-.modal-footer {
-  padding: 2px 16px;
-  background-color: #9c27b0;
-  color: white;
 }

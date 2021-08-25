@@ -6,4 +6,6 @@ git add .
 git commit -m "commit for example"
 git push
 
-git checkout -b your_branch для створення ветки, не працювати на мейн! Бо я єбав потім щось перероблювати
+git checkout -b your_branch для створення ветки, не працювати на мейн! Бо я єбав потім щось перероблювати.
+Писати мені я зроблю мерж
+

@@ -209,6 +209,16 @@
   padding: 30px;
 }
 
+.hero__container__detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 90%;
+  color: #fff;
+}
+
 .hero__heading {
   font-size: 100px;
   margin-bottom: 24px;
@@ -763,4 +773,117 @@
     padding: 10px;
     width: 100%;
   }
+}
+
+/* Modal window Contact*/
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 15%; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */ /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  position: relative;
+  background-color: #e1bee7;
+  margin: auto;
+  padding: 0;
+  border: 5px solid #7b1fa2;
+  width: 400px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-right: 2%;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 3% 0 3% 0;
+  background-color: #9c27b0;
+  color: white;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  padding: 2px 16px;
+}
+
+.modal-body input {
+  margin: 3% 3% 3% 0;
+  border: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #f2f2f2;
+  padding: 12px;
+  border-radius: 3px;
+  width: 100%;
+  font-size: 14px;
+}
+
+.modal-body button {
+  margin: 3% 3% 3% 0;
+  border: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #f2f2f2;
+  padding: 12px;
+  border-radius: 3px;
+  width: 100%;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #9c27b0;
+  color: white;
 }
